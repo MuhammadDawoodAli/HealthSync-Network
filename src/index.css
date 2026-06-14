@@ -1,0 +1,45 @@
+:root {
+  --green: #10b981;
+  --slate: #1e293b;
+  --slate-light: #334155;
+  --text: #f8fafc;
+}
+body { background: #0f172a; color: var(--text); font-family: 'Inter', system-ui, sans-serif; margin: 0; padding: 0; }
+.layout { display: grid; grid-template-columns: 250px 1fr; min-height: 100vh; }
+.sidebar { background: var(--slate); padding: 20px; border-right: 1px solid var(--slate-light); }
+.logo { color: var(--green); margin-top: 0; }
+nav button { display: block; width: 100%; padding: 12px; margin-bottom: 10px; background: transparent; border: 1px solid var(--slate-light); color: var(--text); text-align: left; border-radius: 6px; cursor: pointer; }
+nav button.active { background: var(--slate-light); border-color: var(--green); }
+.os-metrics { margin-top: 40px; padding: 15px; background: #0f172a; border-radius: 6px; font-size: 0.9em; border-left: 3px solid var(--green); }
+.main-content { padding: 30px; }
+.card { background: var(--slate); padding: 25px; border-radius: 12px; margin-bottom: 25px; border: 1px solid var(--slate-light); }
+.card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.subtitle { color: #94a3b8; font-size: 0.9em; margin-top: -10px; margin-bottom: 20px; }
+.grid-form { display: grid; gap: 15px; grid-template-columns: 1fr 1fr auto; }
+input, select { padding: 12px; background: #0f172a; border: 1px solid var(--slate-light); color: var(--text); border-radius: 6px; }
+.btn-dispatch, .btn-resolve { background: var(--green); color: #000; font-weight: bold; padding: 12px 24px; border: none; border-radius: 6px; cursor: pointer; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 15px; text-align: left; border-bottom: 1px solid var(--slate-light); }
+th { color: #94a3b8; font-weight: normal; }
+.clickable { color: var(--green); cursor: pointer; font-weight: bold; }
+.clickable:hover { text-decoration: underline; }
+.memory-blocks { margin-top: 30px; }
+.blocks { display: flex; gap: 10px; }
+.block { flex: 1; padding: 15px; text-align: center; background: #0f172a; border: 1px dashed var(--slate-light); border-radius: 6px; }
+.block.filled { border: 1px solid var(--green); color: var(--green); background: rgba(16, 185, 129, 0.1); }
+.terminal { background: #000; font-family: 'Fira Code', monospace; font-size: 0.85em; color: #4ade80; }
+.term-line { padding: 4px 0; }
+
+.os-viva-card {
+  margin-top: 15px;
+  padding: 15px;
+  background: rgba(59, 130, 246, 0.15);
+  border-left: 4px solid #3b82f6;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: #bfdbfe;
+  line-height: 1.5;
+}
+.os-viva-card strong {
+  color: #60a5fa;
+}
